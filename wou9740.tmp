@@ -39,7 +39,6 @@ shadow_enabled = true
 environment = SubResource("Environment_o3pcs")
 
 [node name="Player" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1.11656, 0, 0, 0, 1, 0, 0.701479, 0)
 script = ExtResource("1_ul3ni")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
@@ -51,7 +50,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.69539, 0)
 shape = SubResource("ConvexPolygonShape3D_hb0d2")
 
 [node name="Head" type="Node3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.198342, 0)
 
 [node name="Player Camra" type="Camera3D" parent="Player/Head"]
 transform = Transform3D(0.995007, 0, 0, 0, 0.995007, 0, 0, 0, 0.995007, 0, 2.428, 0.00175498)
