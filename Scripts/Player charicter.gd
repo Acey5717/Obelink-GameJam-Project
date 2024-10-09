@@ -6,7 +6,7 @@ const WALK_SPEED = 3.0
 const SPRINT_SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 const SENSITIVITY = 0.005
-
+#
 #bob variables
 const BOB_FREAK = 2.0
 const BOB_AMP = 0.08
