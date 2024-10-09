@@ -1,6 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://yndx6va7h4va"]
+[gd_scene load_steps=10 format=3 uid="uid://cjvwtyf5as8lq"]
 
-[ext_resource type="Script" path="res://Scripts/Player charicter.gd" id="1_ul3ni"]
+[ext_resource type="Script" path="res://Scripts/Player charicter.gd" id="1_p0w8w"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7mkf3"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -37,15 +37,15 @@ albedo_color = Color(0.560955, 0.560955, 0.560955, 1)
 transform = Transform3D(1.00502, 0, 0, 0, 1.00502, 0, 0, 0, 1.00502, 0, 0, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.732679, -0.58302, 0.336607, 3.70697e-08, 0.497503, 0.861699, -0.673214, 0.634518, -0.36634, 18.9842, 11.537, -24.1688)
+transform = Transform3D(-0.732679, -0.58302, 0.336607, 3.70697e-08, 0.497503, 0.861699, -0.673214, 0.634518, -0.36634, -2.49169, 11.537, -19.0322)
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_o3pcs")
 
 [node name="Player" type="CharacterBody3D" parent="."]
-transform = Transform3D(1.61662, 0, 0, 0, 1.67137, 0, 0, 0, 1.5855, -2.44197, 0.633283, 0)
-script = ExtResource("1_ul3ni")
+transform = Transform3D(1.61662, 0, 0, 0, 1.67137, 0, 0, 0, 1.5855, -2.44197, -0.399259, 0)
+script = ExtResource("1_p0w8w")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.69539, 0)
@@ -64,7 +64,7 @@ transform = Transform3D(0.995005, 0, 0, 0, 0.891135, 0, 0, 0, 0.995005, 0, 0.144
 [node name="Scene" type="Node" parent="."]
 
 [node name="Map Floor" type="CSGBox3D" parent="Scene"]
-transform = Transform3D(18.1114, 0, 0, 0, 0.187864, 0, 0, 0, 11.9006, -3.80435, 0.506518, -13.7517)
+transform = Transform3D(18.1114, 0, 0, 0, 0.187864, 0, 0, 0, 11.9006, -3.80435, -0.288173, -13.7517)
 material_override = SubResource("ORMMaterial3D_f8skm")
 use_collision = true
 size = Vector3(1.83978, 1, 4.54771)
@@ -94,13 +94,13 @@ transform = Transform3D(1.00761, 0, 0, 0, 1, 0, 0, 0, 0.576594, 0.0156989, 0, -2
 size = Vector3(0.361984, 1, 1.17139)
 
 [node name="Map Glass" type="CSGBox3D" parent="Scene"]
-transform = Transform3D(33.4084, 0, 0, 0, 9.79401, 0, 0, 0, 1, -3.74122, 5.48187, 13.207)
+transform = Transform3D(33.4084, 0, 0, 0, 9.79401, 0, 0, 0, 1, -3.74122, 4.61722, 13.207)
 material_override = SubResource("StandardMaterial3D_sn5do")
 use_collision = true
 size = Vector3(0.985596, 1, 0.239807)
 
 [node name="Map Walls" type="CSGBox3D" parent="Scene"]
-transform = Transform3D(1, 0, 0, 0, 10.8754, 0, 0, 0, 13.3871, -20.3469, 5.36447, 3.09767)
+transform = Transform3D(1, 0, 0, 0, 10.8754, 0, 0, 0, 13.3871, -20.3469, 4.77278, 3.09767)
 material_override = SubResource("StandardMaterial3D_cyy3a")
 use_collision = true
 size = Vector3(0.423706, 0.931763, 1.52295)
