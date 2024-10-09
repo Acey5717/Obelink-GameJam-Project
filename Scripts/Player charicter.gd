@@ -16,6 +16,7 @@ var t_bob = 0.0
 const BASE_FOV = 75.0
 const FOV_CHAINGE = 1.5
 
+
 @onready var head = $Head
 @onready var camra = $"Head/Player Camra"
 
